@@ -5,8 +5,8 @@ N = 100000
 
 x = np.random.uniform(0, 1, N)  #amostras uniformes
 
-#somatório( (x^2 - x) / (4x^4 - 8x^3 + 8x^2 - 4y + 1) )
-integral = np.sum((pow(x, 2) - x) / (4*pow(x, 4) - 8*pow(x, 3) + 8*pow(x, 2) - 4*x + 1)) / N
+#somatório( (x - x^2) / (4x^4 - 8x^3 + 8x^2 - 4y + 1) )
+integral = np.sum((x - pow(x, 2)) / (4*pow(x, 4) - 8*pow(x, 3) + 8*pow(x, 2) - 4*x + 1)) / N
 print(integral)
 
 # Curva
