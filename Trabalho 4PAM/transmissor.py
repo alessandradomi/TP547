@@ -95,7 +95,7 @@ def gerar_trem_impulsos():
 
 
 def plotar_figuras():
-    t = np.linspace(0, comrpimento_vetor_dados, comrpimento_vetor_dados)  # eixo do tempo
+    t = np.linspace(0, comprimento_vetor_dados, comprimento_vetor_dados)  # eixo do tempo
 
     plt.figure(1)
     plt.title('Etapas da transmissão em ' + str(M) + 'PAM')
@@ -131,7 +131,7 @@ mapeamento_palavra_nivel = mapear_bits()  # mapeamento entre as palavras binári
 # dados
 comprimento_dados = 50 * comprimento_palavras  # comprimento do fluxo de bits para transmissão
 fator_expansao = 10  # fator de expansão para construção do sinal quadrado
-comrpimento_vetor_dados = comprimento_dados * fator_expansao  # comprimento do vetor de dados
+comprimento_vetor_dados = comprimento_dados * fator_expansao  # comprimento do vetor de dados
 sequencia_bits = gerar_sequencia_bits()  # fluxo de bits para transmissão
 
 # modulação
